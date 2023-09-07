@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AcademIQ: Student Evaluation System</title>
+    <link rel="icon" href="assets/images/logo-stu.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+   </head>
+  <body>
+    <div class="container-fluid p-0 m-0">
+      <div class="p-0" id="navExpandedPar">
+        <nav
+          class="navbar navbar-expand-lg"
+          style="transition: all ease 0.5s"
+          id="navExpand"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="" height="50" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Team</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container text-center mt-3">
+          <span
+            style="
+              border-bottom: 1px solid black;
+              padding-inline: 15px;
+              font-size: 35px;
+              font-weight: 500;
+            "
+            >AcademIQ</span
+          >
+          <br />
+          <br />
+          <br />
+          <br />
+          <div style="background-color: rgba(183, 183, 183, 0.2)">
+            <span id="shortDesc">
+            </span>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                new TypeIt("#shortDesc", {
+                  strings: ["AcademIQ is an innovative education platform that enhances learning through personalized experiences. It leverages cutting-edge technology to tailor educational content to individual needs, fostering a more effective and engaging learning environment."],
+                }).go();
+              });
+            </script>
+            <br />
+            <br />
+            <br />
+            <span id="shortInfo">
+              At AcademIQ, we're driven by a singular mission: to empower
+              educators and enlighten students. Our platform offers a wide range
+              of cutting-edge tools and features designed to enhance education
+              in meaningful ways.
+            </span>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        style="
+          background-color: rgba(30, 30, 30, 0.2);
+          backdrop-filter: blur(2px);
+          transition: all ease 0.5s;
+          opacity: 0;
+          pointer-events: none;
+        "
+        id="navCompact"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" alt="" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+        hello<br/>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
