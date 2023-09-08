@@ -25,7 +25,7 @@ body::-webkit-scrollbar-track {
 }
 
 #navExpandedPar {
-  background: url("../images/wickedbackground.svg");
+  background: url("../images/header.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -41,4 +41,45 @@ body::-webkit-scrollbar-track {
 #navCompact div div ul li a:hover,
 #navExpand div div ul li a:hover {
   background-size: 100% 2px;
+}
+
+#footer{
+  background: url("../images/footer.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer div.mask {
+  background-color: rgba(185, 177, 177, 0.473);
+}
+
+.button{
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgb(105, 86, 199);
+  border-radius: 5px;
+  padding: 5px 40px;
+  transition: all ease-in-out 0.5s;
+}
+.button:hover{
+  background-color: rgba(46, 38, 86, 0.5);
+  border: 2px solid rgb(46, 38, 86);
+  color: rgb(35, 28, 65);
+}
+
+.subscribe input[type='email'] {
+  background-color: transparent;
+  border: 2px solid rgb(105, 86, 199);
+}
+
+.subscribe button.btn {
+  border: 2px solid rgb(105, 86, 199);
+  border-left: 0px;
+  color: rgb(105, 86, 199);
+}
+
+.form-control:focus{
+  border-color: transparent;
+  box-shadow: none;
+  outline: 0 none;
 }
